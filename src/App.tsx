@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-
+import './App.css'
 interface LocationInfo {
     name: string
     lat: number
@@ -144,8 +144,8 @@ function App() {
     }
 
     return (
-        <div className="App">
-            <a href='https://open-meteo.com/' target='_blank'>Uses weather data from Open-Meteo</a>
+        <div id='clouds-container'>
+            <a href='https://open-meteo.com/' target='_blank' rel='noreferrer'>Uses weather data from Open-Meteo</a>
             <p>Latitude : {lat}</p>
             <p>Longitude : {lng}</p>
             <p>Approximat location : {yourLocation}</p>
